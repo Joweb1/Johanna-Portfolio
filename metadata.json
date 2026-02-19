@@ -1,0 +1,7 @@
+{
+  "name": "Johanna Uroh Portfolio",
+  "description": "A high-end, animated portfolio website for Johanna Uroh, featuring luxurious aesthetics, GSAP animations, and a seamless user experience.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

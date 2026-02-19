@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Johanna Uroh | Growth & Impact</title>
+    <meta name="description" content="Virtual Assistant, Social Media Manager, and Stock Trading Coach." />
+    
+    <!-- Google Fonts: Playfair Display (Luxury) and Manrope (Efficiency/Modern) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      :root {
+        /* Default (Dark Mode / Black & Gold) */
+        --bg-main: #000000;
+        --bg-secondary: #0a0a0a;
+        --text-main: #ffffff;
+        --text-secondary: rgba(255, 255, 255, 0.75);
+        --text-muted: rgba(255, 255, 255, 0.5);
+        --border-dim: rgba(255, 255, 255, 0.15);
+        --accent: #C9A24D; /* Gold */
+        --accent-light: #E5C579;
+        --overlay-color: rgba(0,0,0,0.8);
+        --stroke-color: rgba(255,255,255,0.3);
+      }
+
+      [data-theme='light'] {
+        /* Light Mode */
+        --bg-main: #ffffff;
+        --bg-secondary: #f4f4f5;
+        --text-main: #000000;
+        --text-secondary: rgba(0, 0, 0, 0.7);
+        --text-muted: rgba(0, 0, 0, 0.55);
+        --border-dim: rgba(0, 0, 0, 0.15);
+        --accent: #B08D40; /* Slightly darker gold for contrast on white */
+        --accent-light: #E5C579;
+        --overlay-color: rgba(255,255,255,0.8);
+        --stroke-color: rgba(0,0,0,0.15);
+      }
+
+      /* Transitions */
+      body, div, section, header, footer, p, h1, h2, h3, h4, span, a, button, input {
+        transition: background-color 0.5s cubic-bezier(0.16, 1, 0.3, 1), color 0.5s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.5s ease;
+      }
+
+      /* Hide scrollbar */
+      body {
+        overscroll-behavior: none;
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              // Semantic Mapping: 
+              navy: 'var(--bg-main)',
+              'navy-light': 'var(--bg-secondary)',
+              
+              // Text Semantics
+              white: 'var(--text-main)', // Maps to Black in Light Mode
+              secondary: 'var(--text-secondary)',
+              muted: 'var(--text-muted)',
+              
+              // Borders
+              dim: 'var(--border-dim)',
+
+              gold: 'var(--accent)',
+              'gold-light': 'var(--accent-light)',
+              
+              // Utility for static colors
+              'pure-white': '#ffffff',
+              'pure-black': '#000000',
+              grey: '#F4F6F8',
+            },
+            fontFamily: {
+              sans: ['Manrope', 'sans-serif'],
+              serif: ['Playfair Display', 'serif'],
+            },
+            backgroundImage: {
+              'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^6.22.3",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "gsap": "https://esm.sh/gsap@^3.14.2",
+    "gsap/": "https://esm.sh/gsap@^3.14.2/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.39.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-navy text-white antialiased overflow-x-hidden selection:bg-gold selection:text-white">
+    <div id="root"></div>
+  </body>
+</html>
