@@ -288,7 +288,7 @@ const Navigation: React.FC = () => {
 
                         <div className="text-center">
                             <p className="text-muted font-sans text-xs tracking-[0.3em] uppercase mb-4">Get in Touch</p>
-                            <a href="mailto:hello@johannauroh.com" className="text-xl text-white font-serif italic hover:text-gold transition-colors">hello@johannauroh.com</a>
+                            <a href="mailto:urohjohanna25@gmail.com" className="text-xl text-white font-serif italic hover:text-gold transition-colors">urohjohanna25@gmail.com</a>
                         </div>
                     </div>
                 </div>

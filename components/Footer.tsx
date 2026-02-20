@@ -106,9 +106,9 @@ const Footer: React.FC = () => {
                         <Twitter size={20} />
                     </a>
                 </div>
-                <a href="mailto:hello@johannauroh.com" className="flex items-center gap-2 text-secondary hover:text-gold transition-colors text-lg">
+                <a href="mailto:urohjohanna25@gmail.com" className="flex items-center gap-2 text-secondary hover:text-gold transition-colors text-lg">
                     <Mail size={20} />
-                    hello@johannauroh.com
+                    urohjohanna25@gmail.com
                 </a>
             </div>
         </div>

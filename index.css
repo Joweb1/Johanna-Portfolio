@@ -1,0 +1,45 @@
+/* Global Styles */
+:root {
+  /* Default (Dark Mode / Black & Gold) */
+  --bg-main: #000000;
+  --bg-secondary: #0a0a0a;
+  --text-main: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.75);
+  --text-muted: rgba(255, 255, 255, 0.5);
+  --border-dim: rgba(255, 255, 255, 0.15);
+  --accent: #C9A24D; /* Gold */
+  --accent-light: #E5C579;
+  --overlay-color: rgba(0,0,0,0.8);
+  --stroke-color: rgba(255,255,255,0.3);
+}
+
+[data-theme='light'] {
+  /* Light Mode */
+  --bg-main: #ffffff;
+  --bg-secondary: #f4f4f5;
+  --text-main: #000000;
+  --text-secondary: rgba(0, 0, 0, 0.7);
+  --text-muted: rgba(0, 0, 0, 0.55);
+  --border-dim: rgba(0, 0, 0, 0.15);
+  --accent: #B08D40; /* Slightly darker gold for contrast on white */
+  --accent-light: #E5C579;
+  --overlay-color: rgba(255,255,255,0.8);
+  --stroke-color: rgba(0,0,0,0.15);
+}
+
+/* Transitions */
+body, div, section, header, footer, p, h1, h2, h3, h4, span, a, button, input {
+  transition: background-color 0.5s cubic-bezier(0.16, 1, 0.3, 1), color 0.5s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.5s ease;
+}
+
+/* Hide scrollbar */
+body {
+  overscroll-behavior: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

@@ -31,7 +31,7 @@ const Contact: React.FC = () => {
                         <div className="space-y-8 contact-anim">
                             <div>
                                 <h3 className="text-gold text-sm tracking-widest uppercase mb-2">Email</h3>
-                                <p className="text-2xl text-white">hello@johannauroh.com</p>
+                                <p className="text-2xl text-white">urohjohanna25@gmail.com</p>
                             </div>
                             <div>
                                 <h3 className="text-gold text-sm tracking-widest uppercase mb-2">Location</h3>
